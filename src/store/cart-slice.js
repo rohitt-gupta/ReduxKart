@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const uiSlice = createSlice({
-	name: "ui",
+const cartSlice = createSlice({
+	name: "cart",
 	initialState: { items: [], totalQuantity: 0 },
 	reducers: {
 		addItemToCart(state, action) {
@@ -23,6 +23,6 @@ const uiSlice = createSlice({
 	},
 });
 
-export const uiActions = uiSlice.actions;
+export const cartActions = cartSlice.actions;
 
-export default uiSlice;
+export default cartSlice;
